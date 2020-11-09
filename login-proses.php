@@ -12,9 +12,9 @@ if (isset($_POST['login'])) {
         $_SESSION['nama'] = $nama;
         $_SESSION['login_in'] = $username;
         if ($level == "admin") {
-            echo "<script type='text/javascript'>alert('Hello $level'); location.href=\"admin/home.php\";</script>";
+            echo "<script type='text/javascript'>alert('Hello $level'); location.href=\"home awal/awal.php\";</script>";
         } elseif ($level == "user") {
-            echo "<script type='text/javascript'>alert('Hello $level'); location.href=\"homeuser.php\";</script>";
+            echo "<script type='text/javascript'>alert('Hello $level'); location.href=\"home user/user.php\";</script>";
         }
     } else {
         echo "<script type='text/javascript'>alert('username atau password salah !'); location.href=\"login.php\"; </script>";

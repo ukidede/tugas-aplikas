@@ -4,7 +4,6 @@ include '../koneksi.php';
 $id = $_GET["id"];
 $stt = query("SELECT * FROM anggota_stt WHERE id = $id ")[0];
 if (isset($_POST["submit"])) {
-
     if (edit($_GET) > 0) {
 
         echo " 
